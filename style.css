@@ -9,6 +9,7 @@ body {
 	background: var(--main-bg-colour);
 	font-family: ff-cocon-pro, sans-serif; /*temp font*/
 	font-weight: 400;
+	padding-bottom: 2rem;
 }
 
 nav {
@@ -42,8 +43,8 @@ button:focus {
 }
 
 .feature-img {
-	width: 40rem;
-	height: 40rem;
+	width: 80%;
+	height: 90%;
 }
 
 #home-feature {
