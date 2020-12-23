@@ -67,6 +67,12 @@ button:focus {
 	width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+	.statement-text {
+		width: 100%;
+	}
+}
+
 p {
 	padding: 0.5rem 0;
 }
