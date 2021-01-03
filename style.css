@@ -88,6 +88,16 @@ p {
 	height: auto;
 }
 
-.footer-text {
-	padding: 0 0;
+footer {
+	position: absolute !important;
+	width: 100%;
+	bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	footer {
+		position: absolute !important;
+		width: 100%;
+		bottom: 0px;
+	}
 }

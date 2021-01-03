@@ -1,6 +1,5 @@
-// alert(window.innerWidth);
-const cpr_yr = document.getElementById("cpr-yr");
-var year = new Date().getFullYear();
-var year_tezt = year - 1;
+var copy = document.querySelector("#copy");
+var dynamic_year = new Date().getFullYear() - 1;
 
-cpr_yr.innerTezt = year_text;
+//This doesn't work
+copy.innerText = dynamic_year;
