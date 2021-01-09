@@ -105,7 +105,6 @@ footer {
 	width: 8rem;
 	height: 8rem;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 
 @media screen and (max-width: 800px) {
