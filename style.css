@@ -1,8 +1,8 @@
 :root {
-	--main-bg-colour: #c0d4db;
-	--second-bg-colour: #cad4db;
-	--main-font: report;
-	--secondary-font: anca, sans-serif;
+    --main-bg-colour: #c0d4db;
+    --second-bg-colour: #cad4db;
+    --main-font: report;
+    --secondary-font: anca, sans-serif;
 }
 
 body {
@@ -13,112 +13,189 @@ body {
 	font-family: ff-cocon-pro, sans-serif; /*temp font*/
 	font-weight: 400;
 	padding-bottom: 0.5rem;
+    background: var(--main-bg-colour);
+    font-family: ff-cocon-pro,
+        sans-serif; /*temp font*/
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+main {
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn ease 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadeIn ease 2s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fadeIn ease 2s;
+    -o-animation-fill-mode: forwards;
+    -ms-animation: fadeIn ease 2s;
+    -ms-animation-fill-mode: forwards;
 }
 
 nav {
-	font-family: var(--secondary-font);
-	font-weight: 400;
-	font-style: normal;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-	padding: 2rem 0 1.5rem;
-	font-size: 2.5rem;
+    padding: 2rem 0 1.5rem;
+    font-size: 2.5rem;
 }
 
 .navbar-brand {
-	font-size: 3.2rem;
+    font-size: 3.2rem;
 }
 
 .nav-item {
-	margin: 0 30px;
-	font-size: 1.7rem;
+    margin: 0 30px;
+    font-size: 1.7rem;
 }
 
 .navbar-toggler {
-	border: none;
-	border-radius: none;
+    border: none;
+    border-radius: none;
 }
 
 button:focus {
-	border: none;
-	border-radius: none;
-	outline: none;
+    border: none;
+    border-radius: none;
+    outline: none;
 }
 
 .feature-img {
-	width: 80%;
-	height: 90%;
+    width: 80%;
+    height: 90%;
+    /* opacity: 0; */
 }
 
 @media screen and (max-width: 800px) {
-	.feature-img {
-		width: 100%;
-		height: 100%;
-	}
+    .feature-img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #home-feature {
-	height: auto;
-	margin-top: 0;
+    height: auto;
+    margin-top: 0;
 }
 
 #home-feature-img {
-	padding-left: 3rem;
+    padding-left: 3rem;
 }
 
 .main-feature-text {
-	line-height: 1.3;
-	text-align: justify;
+    line-height: 1.3;
+    text-align: justify;
 }
 
 .statement-text {
-	width: 50%;
+    width: 50%;
 }
 
 @media screen and (max-width: 800px) {
-	.statement-text {
-		width: 100%;
-	}
+    .statement-text {
+        width: 100%;
+    }
 }
 
 p {
-	padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .gallery-img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position: absolute !important;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        position: absolute !important;
+        width: 100%;
+        bottom: 0px;
+    }
 }
 
 .tech-img {
-	width: 8rem;
-	height: 8rem;
-	margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
-	.tech-img {
-		width: 14.5rem;
-		height: 14.5rem;
-	}
+    .tech-img {
+        width: 14.5rem;
+        height: 14.5rem;
+    }
 }
 
 .img-container {
-	margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 @media screen and (max-width: 800px) {
-	.img-container {
-		margin: 1.5rem 0;
-		width: 100%;
-		height: 100vh;
-		text-align: center;
-	}
+    .img-container {
+        margin: 1.5rem 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
 
-	div.img-container {
-		margin: 0;
-	}
+    div.img-container {
+        margin: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 footer {
 	position: absolute !important;
