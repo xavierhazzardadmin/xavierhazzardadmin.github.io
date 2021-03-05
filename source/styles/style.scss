@@ -1,4 +1,8 @@
-$font-main: report;
+//  For every change, this needs to be compilled again.
+//  sass source/styles/style.scss build/style.css
+
+// $font-main: report;
+$font-main: ff-cocon-pro, sans-serif;
 $font-secondary: anca, sans-serif;
 $bg-colour-main: #c0d4db;
 $bg-colour-secondary: #cad4db;
@@ -8,8 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: $bg-colour-main;
-    font-family: ff-cocon-pro,
-        sans-serif; /*temp font*/
+    font-family: $font-main; /*temp font*/
     padding-bottom: 1rem;
 }
 
@@ -30,6 +33,10 @@ body {
 }
 
 main {
+    opacity: 0;
+}
+//fadeIn class controlled by JS
+.fadeIn {
     animation: fadeIn ease 2s;
     animation-fill-mode: forwards;
     -webkit-animation: fadeIn ease 2s;
@@ -205,6 +212,12 @@ footer {
     100% {
         opacity: 1;
     }
+}
+
+a,
+a:hover {
+    color: #212529;
+    text-decoration: none;
 }
 footer {
     position: absolute !important;
