@@ -2,7 +2,7 @@
 
 ### <h1>Hello there</h1>
 
--   🌱 I’m currently learning at The App Brewery as Full-Stack Developer
+-   🌱 I’m currently learning Computer Science Principles 
 
 -   ⚡ Fun fact: Angular is trash.
 
